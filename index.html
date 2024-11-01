@@ -2,3 +2,14 @@
 layout: home
 # Index page
 ---
+<div id="turnstile_div"></div>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<script>
+    Turnstile.load({
+        "siteKey": "0x4AAAAAAAy9VOI9ASD5egSL", // Replace with your actual site key
+        "callback": function(token) {
+            // Handle the token here, e.g., submit it with your form data
+            console.log(token);
+        }
+    });
+</script>
