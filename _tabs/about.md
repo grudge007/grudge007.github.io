@@ -7,4 +7,4 @@ Hello! I'm Anirudh, a DevOps engineer and technology enthusiast with a passion f
 
 I've recently launched a community on Reddit, where I’ve assembled a dedicated team to support beginners in their learning journey. Join us and explore the exciting world of technology together!
 
-Check out our community on Reddit: [Join us here!]([https://www.reddit.com/r/YourCommunityName](https://www.reddit.com/r/netsecuremalayalam/))
+Check out our community on Reddit: [Join us here!](https://www.reddit.com/r/netsecuremalayalam/)
