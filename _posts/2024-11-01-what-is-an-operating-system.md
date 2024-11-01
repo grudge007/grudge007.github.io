@@ -1,7 +1,7 @@
 ---
 layout: post
 title: what is an operating system
-date: 2024-11-01 12:30:00 +0000
+date: 01-11-2014
 categories: [technology basics, operating systems]
 tags: [operating system, beginners guide, computer science, hardware and software, resource management, file management, user interface, security basics, device drivers, system updates]
 ---
