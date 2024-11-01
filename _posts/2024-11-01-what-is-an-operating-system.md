@@ -8,7 +8,7 @@ tags: [operating system, beginners guide, computer science, hardware and softwar
 
 # What is an Operating System?
 
-![operating system](https://essaycorp.com/blog/uploads/operating-systems.webp)
+![operating system](https://cdn.hswstatic.com/gif/computer-operating-sytem.jpg) (.normal)
 
 If you’re new to information technology, it’s essential to understand the basics of an operating system. Even if you know how to use one, many people don’t actually know what an operating system (OS) is or what it’s doing behind the scenes. Let’s break it down.
 
