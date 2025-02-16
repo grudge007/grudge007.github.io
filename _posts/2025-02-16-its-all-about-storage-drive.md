@@ -57,7 +57,7 @@ As technology advanced, people needed more storage and faster access to data. CD
 ---
 
 ## **4. Hard Disk Drives (HDDs): The Workhorse of Storage**
-![hdd](https://images.pexels.com/photos/117729/pexels-photo-117729.jpeg)
+1.howtogeekimages.com/wordpress/wp-content/uploads/2024/02/52975046360_2611d104fc_o.jpg)
 
 ### **What Is an HDD?**
 A **hard disk drive (HDD)** is a storage device that uses spinning magnetic disks (called platters) to store data. It’s like a high-capacity, faster version of a floppy disk.
@@ -94,7 +94,6 @@ Data is stored on memory chips, which can be accessed almost instantly. This mak
 
 ### **Why Are SSDs Popular?**
 SSDs are ideal for everyday use because they make your computer faster and more responsive. They are commonly used in laptops, gaming PCs, and smartphones.
-![ssd](https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2024/02/52975046360_2611d104fc_o.jpg)
 ---
 
 ## **6. NVMe Drives: The Speed Demon**
