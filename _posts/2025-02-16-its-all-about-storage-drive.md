@@ -57,7 +57,7 @@ As technology advanced, people needed more storage and faster access to data. CD
 ---
 
 ## **4. Hard Disk Drives (HDDs): The Workhorse of Storage**
-![hdd](https://images.pexels.com/photos/117729/pexels-photo-117729.jpeg?auto=compress&cs=tinysrgb&w=600)
+![hdd](https://images.pexels.com/photos/117729/pexels-photo-117729.jpeg)
 
 ### **What Is an HDD?**
 A **hard disk drive (HDD)** is a storage device that uses spinning magnetic disks (called platters) to store data. It’s like a high-capacity, faster version of a floppy disk.
