@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What is RAM?
-date: 16-02-2025
+date: 13-02-2025
 categories: [technology basics, hardware]
 tags: [ram, hardware, memory]
 ---
