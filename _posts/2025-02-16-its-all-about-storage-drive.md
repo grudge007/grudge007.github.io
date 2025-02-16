@@ -94,7 +94,7 @@ Data is stored on memory chips, which can be accessed almost instantly. This mak
 
 ### **Why Are SSDs Popular?**
 SSDs are ideal for everyday use because they make your computer faster and more responsive. They are commonly used in laptops, gaming PCs, and smartphones.
-
+![ssd](https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2024/02/52975046360_2611d104fc_o.jpg)
 ---
 
 ## **6. NVMe Drives: The Speed Demon**
