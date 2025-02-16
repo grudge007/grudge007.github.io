@@ -1,12 +1,12 @@
 ---
 layout: post
-title: What is an Operating System?
+title: What are Storage Drives?
 date: 16-02-2025
 categories: [technology basics, hardware]
 tags: [storage, beginners guide, computer, hardware]
 ---
 
-# **Understanding Storage Drives: From Floppy Disks to NVMe**
+# **Understanding Storage Drives**
 ![NVME](https://computertechnicians.au/wp-content/uploads/2022/06/nvme-1-3-vs-nvme-1-4.jpg)
 When you save a file on your computer or phone, where does it go? The answer is **storage drives**. These are like digital filing cabinets where your device keeps all its data—photos, videos, apps, and documents. Over the years, storage technology has evolved a lot, from floppy disks to modern NVMe drives. Let’s explore how these storage drives work, their limitations, and why we’ve moved from one to another.
 
@@ -57,6 +57,7 @@ As technology advanced, people needed more storage and faster access to data. CD
 ---
 
 ## **4. Hard Disk Drives (HDDs): The Workhorse of Storage**
+![hdd](https://images.pexels.com/photos/117729/pexels-photo-117729.jpeg?auto=compress&cs=tinysrgb&w=600)
 
 ### **What Is an HDD?**
 A **hard disk drive (HDD)** is a storage device that uses spinning magnetic disks (called platters) to store data. It’s like a high-capacity, faster version of a floppy disk.
