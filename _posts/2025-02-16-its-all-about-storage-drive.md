@@ -7,7 +7,7 @@ tags: [storage, beginners guide, computer, hardware]
 ---
 
 # **Understanding Storage Drives: From Floppy Disks to NVMe**
-
+![NVME](https://computertechnicians.au/wp-content/uploads/2022/06/nvme-1-3-vs-nvme-1-4.jpg)
 When you save a file on your computer or phone, where does it go? The answer is **storage drives**. These are like digital filing cabinets where your device keeps all its data—photos, videos, apps, and documents. Over the years, storage technology has evolved a lot, from floppy disks to modern NVMe drives. Let’s explore how these storage drives work, their limitations, and why we’ve moved from one to another.
 
 ---
