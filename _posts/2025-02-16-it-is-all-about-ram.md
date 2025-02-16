@@ -32,7 +32,7 @@ Now, imagine your phone only has a small desk. You try to do more things, but it
 
 ## RAM Sizes and Speeds – Why Does It Matter?
 
-![Image](https://www.shutterstock.com/image-photo/computer-memory-modules-on-background-600nw-2326132795.jpg)
+![Image](https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2020/04/freeup-ram.jpg)
 
 You may have heard terms like **4GB**, **8GB**, or **16GB of RAM**, or noticed your device has a “faster” RAM. Here’s how that works.
 
