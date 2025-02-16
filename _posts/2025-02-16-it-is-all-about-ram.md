@@ -2,8 +2,8 @@
 layout: post
 title: What is RAM?
 date: 16-02-2025
-categories: [technology basics, operating systems]
-tags: [RAM, Hardware, Memory,]
+categories: [technology basics, hardware]
+tags: [ram, hardware, memory]
 ---
 
 # RAM: What is it?
