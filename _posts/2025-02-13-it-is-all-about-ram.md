@@ -59,6 +59,8 @@ The faster the RAM, the quicker your device can access and process data. However
 
 You might have heard about **DDR3**, **DDR4**, or **DDR5** when looking at RAM. These are different **versions** of RAM, and each newer version is better than the last one.
 
+![RAM in Action](https://images.wondershare.com/recoverit/article/how_does_ram_work_3.jpg)
+
 ### DDR3 vs DDR4 vs DDR5
 
 - **DDR3** is older, slower, and uses more power. It’s like a worker who gets the job done, but it takes longer, and they use up more energy. DDR3 is still used in older devices, but it’s not as efficient as newer versions. Its maximum frequency is around **2133MHz**, and it’s limited in how much data it can transfer at once.
@@ -68,7 +70,6 @@ You might have heard about **DDR3**, **DDR4**, or **DDR5** when looking at RAM. 
 - **DDR5** is the latest and fastest. It's designed for high-demand tasks, like gaming or video editing, where speed is really important. It’s like the worker who can handle the toughest tasks in the shortest time. DDR5 not only has higher frequencies (starting at **4800MHz** and going up to **8400MHz** or more) but also uses less power and can transfer more data at once compared to DDR4. However, DDR5 is more expensive and requires newer hardware to support it.
 
 ---
-![RAM in Action](https://www.crucial.in/content/dam/crucial/brand-assets/visual-assets/images/custom-photo/solution-application/crucial-new-technology-ddr4-motherboard.jpg.transform/medium-jpg/img.jpg)
 
 ## How Does RAM Affect Your Device?
 
