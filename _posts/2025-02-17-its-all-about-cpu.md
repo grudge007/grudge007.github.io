@@ -1,12 +1,12 @@
 ---
 layout: post
-title: What Is a CPU?
+title: What is a CPU?
 date: 17-02-2025
 categories: [technology basics, hardware]
 tags: [cpu, beginners guide, computer, hardware]
 ---
 
-# **What is a CPU? The Brain of Your Computer**
+# **The Brain of Your Computer**
 
 When you use your computer or phone, have you ever wondered how it knows what to do? How does it open apps, play videos, or let you chat with friends? The answer lies in a tiny but powerful component called the **CPU** (Central Processing Unit). Think of the CPU as the **brain** of your device. Just like your brain controls your body, the CPU controls everything your computer does. Let’s break it down in simple terms.
 
