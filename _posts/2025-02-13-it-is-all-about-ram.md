@@ -68,6 +68,7 @@ You might have heard about **DDR3**, **DDR4**, or **DDR5** when looking at RAM. 
 - **DDR5** is the latest and fastest. It's designed for high-demand tasks, like gaming or video editing, where speed is really important. It’s like the worker who can handle the toughest tasks in the shortest time. DDR5 not only has higher frequencies (starting at **4800MHz** and going up to **8400MHz** or more) but also uses less power and can transfer more data at once compared to DDR4. However, DDR5 is more expensive and requires newer hardware to support it.
 
 ---
+![RAM in Action](https://www.crucial.in/content/dam/crucial/brand-assets/visual-assets/images/custom-photo/solution-application/crucial-new-technology-ddr4-motherboard.jpg.transform/medium-jpg/img.jpg)
 
 ## How Does RAM Affect Your Device?
 
@@ -75,7 +76,6 @@ Let’s bring this all together with an example. Say you're using a **smartphone
 
 The same goes for a **computer**. If you’re running **video editing software** or playing a **high-performance game**, those programs need a lot of RAM to work smoothly. If your computer doesn’t have enough RAM, it will struggle to keep up, and you’ll notice lag or slow performance.
 
-![RAM in Action](https://www.crucial.in/content/dam/crucial/brand-assets/visual-assets/images/custom-photo/solution-application/crucial-new-technology-ddr4-motherboard.jpg.transform/medium-jpg/img.jpg)
 
 ---
 
