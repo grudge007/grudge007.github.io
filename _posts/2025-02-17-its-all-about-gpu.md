@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What is a GPU? The Artist of Your Computer
-date: 16-02-2025
+date: 17-02-2025
 categories: [technology basics, hardware]
 tags: [gpu, graphics, hardware, beginners guide]
 ---
