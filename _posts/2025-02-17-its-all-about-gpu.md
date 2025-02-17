@@ -6,7 +6,7 @@ categories: [technology basics, hardware]
 tags: [gpu, graphics, hardware, beginners guide]
 ---
 
-# **What is a GPU? The Artist of Your Computer**
+# **The Artist of Your Computer**
 
 ![What is a GPU?](https://www.fsp-group.com/upload/241209-6756896BD565F.jpg)
 
