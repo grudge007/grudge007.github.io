@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What is a File System?
-date: 19-02-2025
+date: 18-02-2025
 categories: [technology basics, filesystem]
 tags: [operating system, beginners guide, computer, software]
 ---
