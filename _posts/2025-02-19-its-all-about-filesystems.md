@@ -46,7 +46,6 @@ There are many file systems, each designed for specific purposes. Let’s look a
 
 Think of FAT32 as a **universal adapter**. It works everywhere but has some limitations, like not being able to handle very large files.
 
-![FAT32 Overview]()
 
 ### **exFAT (Extended File Allocation Table)**
 - **What It Is**: An improved version of FAT32.
