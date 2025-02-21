@@ -1,17 +1,15 @@
 ---
 layout: post
-title: Nginx Reverse Proxy Configuration
+title: Setting Up Nginx as a Reverse Proxy with Load Balancing
 date: 21-02-2025
-categories: [technology basics, reverse-proxy]
-tags: [software, configuration, beginners guide]
+categories: [technology basics, reverse-proxy, load balancer]
+tags: [software, configuration, beginners guide, nginx]
 ---
 
-# **Setting Up Nginx as a Reverse Proxy**
-
 ## **Overview**
-This guide explains how to configure Nginx as a reverse proxy to forward requests from `192.168.1.10` to a backend server at `192.168.1.100`.
+This guide explains how to configure Nginx as a reverse proxy with load balancing to distribute traffic between two backend servers: `192.168.1.100` and `192.168.1.101`.
 
-A reverse proxy allows clients to access a backend server without exposing it directly, providing additional security, load balancing, and caching benefits.
+A reverse proxy with load balancing improves performance, distributes traffic evenly, and provides failover protection.
 
 ---
 
@@ -40,33 +38,40 @@ sudo systemctl enable nginx  # Enables it to start on boot
 
 ---
 
-## **Step 2: Configure Nginx as a Reverse Proxy**
+## **Step 2: Configure Nginx as a Reverse Proxy with Load Balancing**
 
 Nginx configurations are stored in different locations depending on the OS:
 - **Ubuntu/Debian**: `/etc/nginx/sites-available/`
 - **CentOS/RHEL**: `/etc/nginx/conf.d/`
 
-### **Create a Reverse Proxy Configuration**
+### **Create a Load Balancing Configuration**
 Edit the configuration file:
 
 #### **Ubuntu/Debian**
 ```bash
-sudo nano /etc/nginx/sites-available/reverse-proxy
+sudo nano /etc/nginx/sites-available/loadbalancer
 ```
 
 #### **CentOS/RHEL**
 ```bash
-sudo nano /etc/nginx/conf.d/reverse-proxy.conf
+sudo nano /etc/nginx/conf.d/loadbalancer.conf
 ```
 
 Add the following content:
 ```nginx
+upstream backend_servers {
+    least_conn;  # Load balancing method: Sends traffic to the server with the least connections
+
+    server 192.168.1.100;
+    server 192.168.1.101;
+}
+
 server {
     listen 80;
-    server_name _;  # Accepts all domain/IP requests
+    server_name _;  # Accepts all requests
 
     location / {
-        proxy_pass http://192.168.1.100;
+        proxy_pass http://backend_servers;  # Forward requests to the backend servers
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
@@ -77,25 +82,24 @@ server {
 ### **Explanation:**
 - `listen 80;` → Listens for HTTP traffic on port 80.
 - `server_name _;` → Catches all incoming requests regardless of domain or IP.
-- `proxy_pass http://192.168.1.100;` → Forwards requests to the backend server.
-- `proxy_set_header` → Ensures the backend server sees the correct request headers.
+- `upstream backend_servers {}` → Defines a group of backend servers.
+- `least_conn;` → Distributes traffic to the server with the fewest active connections.
+- `proxy_pass http://backend_servers;` → Forwards requests to the backend servers.
+- `proxy_set_header` → Ensures the backend servers see the correct request headers.
 
 ---
 
 ## **Step 3: Enable the Configuration**
 
 ### **Ubuntu/Debian:**
-Enable the new configuration by creating a symbolic link:
+Enable the new site and disable the default one:
 ```bash
-sudo ln -s /etc/nginx/sites-available/reverse-proxy /etc/nginx/sites-enabled/
-```
-Disable the default Nginx welcome page:
-```bash
+sudo ln -s /etc/nginx/sites-available/loadbalancer /etc/nginx/sites-enabled/
 sudo rm /etc/nginx/sites-enabled/default
 ```
 
 ### **CentOS/RHEL:**
-No symlink is needed; simply ensure that the configuration file exists in `/etc/nginx/conf.d/`.
+No symlink is needed; just ensure that the configuration file exists in `/etc/nginx/conf.d/`.
 
 ---
 
@@ -129,47 +133,42 @@ sudo firewall-cmd --reload
 
 ---
 
-## **Step 6: Verify Reverse Proxy Functionality**
-To confirm that requests are correctly proxied, use a browser or `curl`:
+## **Step 6: Verify Load Balancing**
+
+### **Option 1: Use `curl`**
+Run multiple requests from a client machine:
 ```bash
 curl -I http://192.168.1.10
 ```
-If everything is set up correctly, you should see a response from `192.168.1.100` instead of the default Nginx page.
+You should see responses alternating between `192.168.1.100` and `192.168.1.101`.
+
+### **Option 2: Check Nginx Logs**
+Monitor Nginx logs to see requests being distributed:
+```bash
+sudo tail -f /var/log/nginx/access.log
+```
+
+### **Option 3: Use a Web Browser**
+1. Open a browser and go to `http://192.168.1.10`
+2. Refresh multiple times – traffic should alternate between servers.
 
 ---
 
-## **Troubleshooting**
-
-### **Seeing Nginx Default Page Instead of the Backend?**
-1. Check active server blocks:
-   ```bash
-   sudo nginx -T | grep server_name
-   ```
-   Ensure only the reverse proxy configuration is active.
-
-2. Ensure the configuration is loaded:
-   ```bash
-   sudo systemctl restart nginx
-   ```
-
-3. Verify that `192.168.1.100` is accessible from the proxy server:
-   ```bash
-   curl -I http://192.168.1.100
-   ```
-
-### **Want to Redirect Instead of Proxy?**
-If you want to redirect users to `192.168.1.100` instead of just forwarding requests, use:
+## **Step 7: Optional - Enable Health Checks**
+To automatically remove unhealthy servers, modify the `upstream` block:
 ```nginx
-server {
-    listen 80;
-    server_name _;
-    return 301 http://192.168.1.100$request_uri;
+upstream backend_servers {
+    least_conn;
+    server 192.168.1.100 max_fails=3 fail_timeout=10s;
+    server 192.168.1.101 max_fails=3 fail_timeout=10s;
 }
 ```
-This will make users' browsers change the URL to `192.168.1.100`.
+- If a server fails 3 times within 10 seconds, it will be **temporarily removed** from load balancing.
 
 ---
 
 ## **Conclusion**
-You have now successfully set up an Nginx reverse proxy on `192.168.1.10` to forward traffic to `192.168.1.100`. This setup improves security and allows centralized control over incoming requests. You can further enhance the configuration by adding HTTPS with Let's Encrypt, rate limiting, or caching mechanisms.
+You have now successfully set up Nginx as a reverse proxy with load balancing between `192.168.1.100` and `192.168.1.101`. This setup ensures efficient traffic distribution, improves reliability, and provides failover protection. 
+
+You can further enhance this setup by adding HTTPS with Let's Encrypt, session persistence, or caching mechanisms.
 
