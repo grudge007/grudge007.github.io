@@ -3,8 +3,11 @@
 icon: fas fa-info-circle
 order: 4
 ---
-Hello! I'm Anirudh, a DevOps engineer and technology enthusiast with a passion for building communities. I love helping others learn about networking and cybersecurity, as it's a great way for me to expand my own knowledge too.
 
-I've recently launched a community on Reddit, where I’ve assembled a dedicated team to support beginners in their learning journey. Join us and explore the exciting world of technology together!
+Hello, I'm Anirudh.
 
-Check out our community on Reddit: [Join us here!](https://www.reddit.com/r/netsecuremalayalam/)
+I work as a DevOps engineer and spend most of my time building, breaking, automating, fixing, and sometimes questioning why infrastructure behaves the way it does.
+
+Lately I’ve been trying to move deeper into platform engineering by building tools, learning Golang, and understanding systems properly instead of just using them blindly. Most of my interests revolve around Linux, automation, deployment workflows, self-hosting, networking, and backend tooling.
+
+I enjoy building small utilities that solve real problems for me, even if the original goal was just learning how something works under the hood.
