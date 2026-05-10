@@ -1,5 +1,3 @@
-# Why I Built Vulta
-
 Ever since I joined the IT field, I always had this obsession with knowing how things actually work. **What is under the hood? How was this built?** Questions like these took a lot of my time. Sometimes it was frustrating because whenever I found a tool interesting, the next thing I would think about was how they built it and whether I could build my own version.
 
 People usually say *“don’t reinvent the wheel,”* but I used to do exactly that. Most of the time, once I understood how something was built, I would stop halfway because I realized the complexity involved and started questioning whether it was worth the time.
