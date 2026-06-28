@@ -1,5 +1,3 @@
-# Why I Built Incubator
-
 As I said in my last blog about [Vulta](https://github.com/grudge007/vulta), I was always curious about learning how things work under the hood. I even tried reading the Linux TCP stack code from GitHub even though I didn't know much C.
 
 ## Discovering Containers and Dooker
